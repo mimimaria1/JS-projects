@@ -17,3 +17,7 @@ function save() {
 }
 
 console.log("Let's count people on the subway!");
+
+//Learned about; script tag, variables, numbers,
+//strings, console.log(), functions, the DOM,
+// getElementById(), innerText and textContent
