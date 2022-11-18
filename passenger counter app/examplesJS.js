@@ -122,7 +122,48 @@
 // outcome = 100100
 
 //--------------------------------------------------------
+// let myPoints = 3;
+
+// function add3Points() {
+//   myPoints += 3;
+// }
+
+// function remove1Point() {
+//   myPoints -= 1;
+// }
+
+// add3Points();
+// add3Points();
+// add3Points();
+// remove1Point();
+// remove1Point();
+// console.log(myPoints);
 
 //--------------------------------------------------------
+// let namee = "Linda";
+// let greeting = "Hi there ";
 
+// function greetLinda() {
+//   console.log(greeting + ", " + namee + "!");
+// }
+
+// greetLinda();
+//--------------------------------------------------------
+// let firstName = "Maria ";
+// let lastName = "Nerwa";
+
+// let fullName = firstName + lastName;
+
+// console.log(fullName);
+//--------------------------------------------------------
+// console.log("2" + 2) // "22"
+// console.log(11 + 7) // 18
+// console.log(6 + "5") // 65
+// console.log("my points: " + 5 + 9) // "my points: 59"
+// console.log(2 + 2) // 4
+// console.log("11" + "14") // 1114
+//--------------------------------------------------------
+//--------------------------------------------------------
+//--------------------------------------------------------
+//--------------------------------------------------------
 //--------------------------------------------------------
