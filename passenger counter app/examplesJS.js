@@ -163,7 +163,61 @@
 // console.log(2 + 2) // 4
 // console.log("11" + "14") // 1114
 //--------------------------------------------------------
+
+// let age = 20;
+// if (age < 21) {
+//   console.log("Your too young bro! Get the f out of here..");
+// } else {
+//   console.log("WELCOME TO BLACKJACK");
+// }
 //--------------------------------------------------------
+// let age = 110;
+// if (age < 100) {
+//   console.log("No b-day card! Sawryyy");
+// } else if (age === 100) {
+//   console.log("The B-DAY CARD FOR YOU! CONGRATZ");
+// } else {
+//   console.log("You can cry now. Bye");
+// }
 //--------------------------------------------------------
+// let firstCard = 13;
+// let secondCard = 8;
+// let sum = firstCard + secondCard;
+// let hasBlackJack = false;
+// let isAlive = true;
+
+// if (sum < 21) {
+//   console.log("Another card?");
+// } else if (sum === 21) {
+//   console.log("Wohooo! BLACKJACK BISH");
+//   hasBlackJack = true;
+// } else {
+//   console.log("Your out, bye BISH");
+//   isAlive = false;
+// }
+// console.log(isAlive);
 //--------------------------------------------------------
+// console.log(4 === 3); false
+// console.log(5 > 2); true
+// console.log(12 > 12); false
+// console.log(3 < 0); false
+// console.log(3 >= 3); true
+// console.log(11 <= 11); true
+// console.log(3 <= 2); false
+//--------------------------------------------------------
+
+//--------------------------------------------------------
+
+//--------------------------------------------------------
+
+//--------------------------------------------------------
+
+//--------------------------------------------------------
+
+//--------------------------------------------------------
+
+//--------------------------------------------------------
+
+//--------------------------------------------------------
+
 //--------------------------------------------------------
