@@ -205,7 +205,16 @@
 // console.log(11 <= 11); true
 // console.log(3 <= 2); false
 //--------------------------------------------------------
-
+// Arrays =
+// let profileInformation = [
+//     "Maria Nerwa",
+//     "30 years old",
+//     "Starting webdeveloper"
+// ]
+// Arrays beginnen altijd met een 0 index.
+// maaaaaarrrr .... >
+// console.log(featuredPosts.length)
+// met .length telt hij zoals we dat gewend zijn.
 //--------------------------------------------------------
 
 //--------------------------------------------------------
