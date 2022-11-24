@@ -1,23 +1,22 @@
-let firstCard = 18;
+let firstCard = 13;
 let secondCard = 8;
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
 let message = "";
-
 let messageEl = document.getElementById("message-el");
-console.log(messageEl);
+let sumEl = document.getElementById("sum-el");
 
 function startGame() {
+  sumEl.textContent = "Sum: " + sum;
   if (sum < 21) {
-    console.log("Draw another card?");
+    message = "Draw another card?";
   } else if (sum === 21) {
-    console.log("Wohooo! BLACKJACK BISH");
+    message = "Wohooo! BLACKJACK BISH";
     hasBlackJack = true;
   } else {
-    console.log("Your out, bye BISH");
+    message = "Your out, bye BISH";
     isAlive = false;
   }
+  messageEl.textContent = message;
 }
-
-messageEl.textContent = message;
