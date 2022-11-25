@@ -216,9 +216,24 @@
 // console.log(featuredPosts.length)
 // met .length telt hij zoals we dat gewend zijn.
 //--------------------------------------------------------
+// let cards = [7, 4]
+// cards.push(2)
+// console.log(cards)
 
+// pushes two at the and of the array = [7, 4, 2]
 //--------------------------------------------------------
+// Push newMessage to the messages Array, and then log out the array
+// let message = [
+//     "hey, how are you?",
+//     "im fine wby?",
+//     "busy working and stuff"
+// ]
+// let newMessage = "same  here!"
 
+// messages.push(newMessage)
+// console.log(message)
+//Your adding the message "same here" at the end. But with;
+// message.pop() Your deleting the last item from te array
 //--------------------------------------------------------
 
 //--------------------------------------------------------
