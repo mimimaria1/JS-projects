@@ -28,8 +28,9 @@ function renderGame() {
   messageEl.textContent = message;
 }
 function newCard() {
-  console.log("Draw new card!");
-  let card = 3;
+  let card = 4;
   sum += card;
+  cards.push(card);
+  console.log(cards);
   renderGame();
 }

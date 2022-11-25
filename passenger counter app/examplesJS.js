@@ -235,7 +235,17 @@
 //Your adding the message "same here" at the end. But with;
 // message.pop() Your deleting the last item from te array
 //--------------------------------------------------------
+//     START            FINISH      STEP SIZE
+// for ( let count = 1;    count < 11  count += 1) {
+//     console.log(count)
+// }
 
+// for (let i = 0; i < 6; i += 1) {
+//   console.log(i);
+// }
+// for (let i = 10; i < 101; i += 10){
+// console.log(i)
+// }
 //--------------------------------------------------------
 
 //--------------------------------------------------------
