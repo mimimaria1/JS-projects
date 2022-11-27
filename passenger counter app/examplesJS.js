@@ -247,6 +247,78 @@
 // console.log(i)
 // }
 //--------------------------------------------------------
+//  let messages = [
+//     "hey, how are you?",
+//     "im fine wby?",
+//     "busy working and stuff"
+//     "great to hear that!"
+//
+// How to get the messages underneath eachother,there are two ways:
+// The hard way like this:
+// console.log(messages[0])
+// console.log(messages[1])
+// console.log(messages[2])
+// console.log(messages[3])
+// or with a for loop:
+// for (let i = 0; messages < 5; i += 1) {}
+// i += 1 ------ can also use i++ || does exactly the same
+//--------------------------------------------------------
+// let kards = [7, 3, 9];
+
+// for (let i = 0; i < kards.length; i += 1) {
+//   console.log(kards);
+// }
+//--------------------------------------------------------
+// let sentence = ["hello ", "my ", "name ", "is ", "Maria"];
+// let greetingEl = document.getElementById("greeting-el");
+// for (let i = 0; i < sentence.length; i++) {
+//     greetingEl.textContent += sentence[i]
+// }
+// in the above i put a space after each word,
+// but when you didnt do that, you can also add after the
+// sentence[i] + " "; and it will automatically add spaces
+//--------------------------------------------------------
+// let player1Time = 328;
+// let player2Time = 367;
+// function getFastestRaceTime() {
+//   if (player1Time < player2Time) {
+//     return player1Time;
+//   } else if (player2Time < player1Time) {
+//     return player2Time;
+//   } else {
+//     return player1Time;
+//   }
+// }
+// let fastesRace = getFastestRaceTime()   >>>always call the function afterwards!!
+//
+// function getTotalRaceTime() {
+//     return player1Time + player2Time;
+//     let totalTime = getTotalRaceTime();
+//     console.log(totalTime);
+// }
+//--------------------------------------------------------
+// GOOD TIP: WHEN YOU WANT TO CHANGE MULTIPLE LINES USE:
+// cmd+d (macOs)  - ctrl-d(windows) <<<<<<<<<<<<<<<<<
+//--------------------------------------------------------
+// let randomNumber = Math.random() ===> Generates a random number between 0 and 0.999
+
+// let randomNumber = Math.random() * 6; ===> Generates from 0 to 5.999
+
+// let flooredNumber = Math.floor(3,45632) ===> REMOVES THE DECIMALS
+// let randomNumber = Math.floor(Math.random() * 6); ===> 0 | 1 | 2 | 3 | 4 | 5 Generates whole numbers
+// let randomNumber = Math.floor(Math.random() * 6) + 1; ===> 1 | 2 | 3 | 4 | 5 | 6 Generates from 1 to 6
+//--------------------------------------------------------
+// and now with a function;
+// function rollDice() {
+//     let randomNumber = Math.floor(Math.random() * 6) + 1;
+//     return randomNumber;
+//   }
+//   console.log(rollDice());
+//--------------------------------------------------------
+
+//--------------------------------------------------------
+
+//--------------------------------------------------------
 
 //--------------------------------------------------------
 
