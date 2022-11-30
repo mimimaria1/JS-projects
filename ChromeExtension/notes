@@ -17,3 +17,39 @@ box.addEventListener("click", function () {
   console.log("I want to open the box!");
 });
 // is handy so you dont need to write the onclick in the html file
+
+//How to get value from input field
+var text = document.getElementById("text");
+window.onload = function () {
+  text.addEventListener("input", function () {
+    console.log(text.value);
+  });
+};
+
+//Use a for loop to log out leads
+let myLeads = [];
+const inputEl = document.getElementById("input-el");
+const inputBtn = document.getElementById("input-btn");
+
+inputBtn.addEventListener("click", function () {
+  myLeads.push(inputEl.value);
+  console.log(myLeads);
+});
+
+for (let i = 0; i < myLeads.length; i++) {
+  console.log(myLeads[i]);
+}
+
+//Render the leads in the unordered list using ulEl.textContent
+for (let i = 0; i < myLeads.length; i++) {
+  ulEl.textContent += myLeads[i] + " ";
+}
+
+//How to render <li> elements with innerHTML
+for (let i = 0; i < myLeads.length; i++) {
+  ulEl.innerHTML += "<li>" + myLeads[i] + "</li>";
+}
+
+//Use .innerHTML to render a Buy! button inside the div container
+const container = document.getElementById("container");
+container.innerHTML = "<button>Buy!</button>";

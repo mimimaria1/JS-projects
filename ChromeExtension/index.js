@@ -1,5 +1,13 @@
-let inputBtn = document.getElementById("input-btn");
+let myLeads = ["www.royalexclusif.com", "www.cz.nl", "www.pidz.nl"];
+const inputEl = document.getElementById("input-el");
+const inputBtn = document.getElementById("input-btn");
+const ulEl = document.getElementById("ul-el");
 
 inputBtn.addEventListener("click", function () {
-  console.log("Button clicked!");
+  myLeads.push(inputEl.value);
+  console.log(myLeads);
 });
+
+for (let i = 0; i < myLeads.length; i++) {
+  ulEl.innerHTML += "<li>" + myLeads[i] + "</li>";
+}
