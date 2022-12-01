@@ -54,9 +54,20 @@ for (let i = 0; i < myLeads.length; i++) {
 const container = document.getElementById("container");
 container.innerHTML = "<button>Buy!</button>";
 
-// You can use createElement() and append() instead of innerHTML
+//You can use createElement() and append() instead of innerHTML
 for (let i = 0; i < myLeads.length; i++) {
   const li = document.createElement("li");
   li.textContent = myLeads[i];
   ulEl.append(li);
 }
+
+//Add the item to the listItems variable instead of the ulEl.innerHTML
+let listItems = "";
+for (let i = 0; i < myLeads.length; i++) {
+  listItems += "<li>" + myLeads[i] + "</li>";
+}
+
+ulEl.innerHTML = listItems;
+console.log(listItems);
+
+//Create a render function
