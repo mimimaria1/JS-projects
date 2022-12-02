@@ -1,5 +1,5 @@
 body {
-  background-image: url("station.jpg");
+  background-image: url("./yuvraj-singh-87_tRukuaIs-unsplash.jpg");
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -7,14 +7,19 @@ body {
 }
 
 h1 {
-  margin-top: 10px;
+  margin-top: 200px;
   margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 70px;
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+p {
+  color: white;
+  font-size: 25px;
 }
 
 button {
@@ -29,9 +34,9 @@ button {
 }
 
 #increment-btn {
-  background: darkred;
+  background: black;
 }
 
 #save-btn {
-  background: darkgreen;
+  background: green;
 }
