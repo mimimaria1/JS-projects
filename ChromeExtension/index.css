@@ -2,20 +2,40 @@ body {
   margin: 0;
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #a3e690;
 }
 
 input {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
-  border: 1px solid #71c11d;
+  border: 1px solid #358800;
   margin-bottom: 4px;
 }
 
 button {
-  background: #71c11d;
+  background: #358800;
   color: white;
   padding: 10px 20px;
-  border: none;
   font-weight: bold;
+  margin-left: 0px;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #358800;
+}
+
+ul {
+  margin-top: 30px;
+  list-style: none;
+  padding-left: 10;
+}
+
+li {
+  margin-top: 20px;
+}
+
+a {
+  color: #358800;
 }

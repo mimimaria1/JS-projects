@@ -70,4 +70,8 @@ for (let i = 0; i < myLeads.length; i++) {
 ulEl.innerHTML = listItems;
 console.log(listItems);
 
-//Create a render function
+//Create a template string
+const recipient = "Maria";
+const sender = "Lisa";
+const message = `Hey ${recipient}! How is it going?`;
+console.log(message);
