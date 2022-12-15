@@ -91,3 +91,13 @@ localStorage.setItem("cart", JSON.stringify(["apple", "banana"]));
 //And to retrieve it you need to convert it from JSON
 const cart = JSON.parse(localStorage.getItem("cart"));
 console.log(cart); //prints ['apple', 'banana']
+
+let myLeads = `["www.wikipedia.com"]`;
+//turn the myLeads into an array
+myLeads = JSON.parse(myLeads);
+//push a new value to the array
+myLeads.push("www.google.com");
+//turn the array in to a string
+myLeads - JSON.stringify(myLeads);
+// console log with typeof to verify the string
+console.log(typeof myLeads);

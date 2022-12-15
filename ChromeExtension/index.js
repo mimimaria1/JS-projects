@@ -1,14 +1,16 @@
 let myLeads = [];
+
 const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
 
-localStorage.setItem("myLeads", "www.examplelead.com");
+localStorage.setItem("myLeads", JSON.stringify(myLeads));
 
 inputBtn.addEventListener("click", function () {
   myLeads.push(inputEl.value);
   inputEl.value = "";
   renderLeads();
+  console.log(localStorage.getItem("myLeads"));
 });
 
 function renderLeads() {
