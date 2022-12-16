@@ -101,3 +101,20 @@ myLeads.push("www.google.com");
 myLeads - JSON.stringify(myLeads);
 // console log with typeof to verify the string
 console.log(typeof myLeads);
+
+//truthy and falsy statements
+const credits = 12;
+if (credits > 0) {
+  console.log("Lets play!");
+} else {
+  console.log("Sorry, you have no credits");
+}
+//the if () can also be (credits) or (12) or (0) it will still give the same valuee
+
+//Falsy values
+false;
+0;
+("");
+null; //how a developer see emptiness
+undefined; //how a javascript see an emptiness
+NaN; //almost never used
