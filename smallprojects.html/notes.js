@@ -118,11 +118,4 @@ false;
 null; //how a developer see emptiness
 undefined; //how a javascript see an emptiness
 NaN; //almost never used
-
-//
-let trueOfFalse = Boolean("hello");
-console.log(trueOfFalse);
-//would return true
-let trueOrFalse = Boolean("");
-console.log(trueOfFalse);
-//would return false
+s;
