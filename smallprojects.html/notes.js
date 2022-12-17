@@ -112,10 +112,10 @@ if (credits > 0) {
 //the if () can also be (credits) or (12) or (0) it will still give the same valuee
 
 //Falsy values
-false;
-0;
-("");
-null; //how a developer see emptiness
-undefined; //how a javascript see an emptiness
-NaN; //almost never used
-s;
+// false;
+// 0;
+// ("");
+// null; //how a developer see emptiness
+// undefined; //how a javascript see an emptiness
+// NaN; //almost never used
+// s;
