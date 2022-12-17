@@ -1,0 +1,7 @@
+//
+let trueOfFalse = Boolean("hello");
+console.log(trueOfFalse);
+//would return true
+let trueOfFalse = Boolean("");
+console.log(trueOfFalse);
+//would return false
