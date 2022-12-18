@@ -119,3 +119,11 @@ if (credits > 0) {
 // undefined; //how a javascript see an emptiness
 // NaN; //almost never used
 // s;
+
+//
+let trueOfFalse = Boolean("hello");
+console.log(trueOfFalse);
+//would return true
+let trueOrFalse = Boolean("");
+console.log(trueOfFalse);
+//would return false
