@@ -18,8 +18,13 @@ button {
   background: #358800;
   color: white;
   padding: 10px 20px;
+  border: 1px solid #358800;
   font-weight: bold;
-  margin-left: 0px;
+}
+
+#delete-btn {
+  background: white;
+  color: #358800;
 }
 
 h1 {
