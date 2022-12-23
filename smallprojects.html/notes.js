@@ -135,3 +135,8 @@ console.log(Boolean(100)); // true
 console.log(Boolean(null)); // false
 console.log(Boolean([0])); // true
 console.log(Boolean(-0)); // false
+
+//function for calling a name
+function greetUser(name) {
+  welcomeEl.textContent = "Welcome back, " + " name + ";
+}
