@@ -128,7 +128,7 @@ let trueOrFalse = Boolean("");
 console.log(trueOfFalse);
 //would return false
 
-//truthy or Falsy
+//Truthy or Falsy
 console.log(Boolean("")); // false
 console.log(Boolean("0")); // true
 console.log(Boolean(100)); // true
@@ -138,5 +138,6 @@ console.log(Boolean(-0)); // false
 
 //function for calling a name
 function greetUser(name) {
-  welcomeEl.textContent = "Welcome back, " + " name + ";
+  welcomeEl.textContent = "Welcome back, " + name;
 }
+greetUser("Maria");
