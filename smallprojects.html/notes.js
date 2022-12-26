@@ -147,3 +147,5 @@ function greetUser(greeting) {
   welcomeEl.textContent = greeting + ", Maria!";
 }
 greetUser("Helloooww");
+
+//Or
