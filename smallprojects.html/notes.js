@@ -193,3 +193,90 @@ console.log(firstCard)
 //localStorage,
 //JSON object
 //objects in arrays
+
+//PRACTISES/////////////////////
+
+//create a function that takes a single parameter, an array,
+//and logs all the items of the array to the console
+//call the function while passing in myCourses as an argument
+let myCourses = ["HTML", "CSS", "JAVASCRIPT"]
+
+function logItems(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i])
+  }
+}
+logItems(myCourses)
+
+//Save value to localStorage
+//delete your code and refresh the page
+//fetch your value from localStorage and log it out
+
+localStorage.setItem("myCredits", "100") >>DELETE 
+
+let myCredits = localStorage.getItem("myCredits")
+console.log(myCredits)
+
+//fetch the button from the DOM, store it in a variable
+const janeBtn =  document.getElementById("jane-btn")
+//use addEventlistener() to listen for button clicks
+janeBtn.addEventListener("click", function(){
+  console.log(data[0].score)
+})
+//log jane's score when the button is clicked (via data)
+
+let data = [
+  {
+    player: "Jane",
+    score: 52
+  },
+  {
+    player: "Mark",
+    score: 41
+  }
+]
+//--------------
+//the function takes two parameters: a descripction and an array.
+//It should return a string based upon the description and array
+function generateSentence(desc, arr) {
+  let baseString = `The ${arr.length} ${desc} are`
+  const lastIndex = arr.length - 1
+  for (let i = 0; i < arr.length; i++) {
+    if ( i === lastIndex) {
+      baseString += arr[i]
+    } else {
+      baseString += arr[i] + ", "
+    }
+  }
+  return baseString
+}
+
+const sentence = generateSentence("highest mountain", ["mount everest", "k2"])
+console.log(sentence)
+
+//create a function that renders the three team images
+//use a for loop, template strings (``), plus equals (+=)
+//.innerHTML to solve the problem
+const images = [
+  "image1"
+  "image2"
+  "image3"
+]
+
+const container = document.getElementById("container")
+function renderImages() {
+  let imagesDOM = ""
+  for(let i = 0; i < images.length; i++) {
+    imagesDOM += `<img alt="Employee" class="team-img" src="${imgs[i]}">`
+  }
+  container.innerHTML = imagesDOM
+}
+
+renderImages()
+
+
+//continue learning
+//basic JS FTW
+//ES6 and beyond
+//APIs & async JavaScript
+//server-side JavaScript
