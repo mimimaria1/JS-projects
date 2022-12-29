@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #cff3c5;
+  background-color: #4ab5af;
   min-width: 400px;
 }
 
@@ -10,26 +10,26 @@ input {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
-  border: 1px solid #358800;
+  border: 1px solid #4a86b5;
   margin-bottom: 4px;
 }
 
 button {
-  background: #358800;
+  background: #4a86b5;
   color: white;
   padding: 10px 20px;
-  border: 1px solid #358800;
+  border: 1px solid #4a86b5;
   font-weight: bold;
 }
 
 #delete-btn {
   background: white;
-  color: #358800;
+  color: #4a86b5;
 }
 
 h1 {
   font-family: Arial, Helvetica, sans-serif;
-  color: #358800;
+  color: #4a86b5;
 }
 
 ul {
@@ -43,5 +43,5 @@ li {
 }
 
 a {
-  color: #358800;
+  color: #4a86b5;
 }
