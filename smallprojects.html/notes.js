@@ -170,3 +170,15 @@ function add(num1, num2) {
 
 console.log(add(3, 4)); //should log 7
 console.log(add(9, 102)); //should log 111
+
+//parameters are created INSIDE the function 
+function greetUser(greeting, name, emoji)
+//arguments are created OUTISDE of the function
+greetUser("Hello", "Maria")
+
+//create a function that returns the first item in the array
+function getFirst(arr) {
+  return arr[0]
+}
+let firstCard = getFirst([10,2,9])
+console.log(firstCard)
