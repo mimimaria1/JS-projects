@@ -153,3 +153,12 @@ function greetUser(greeting, name) {
   welcomeEl.textContent = greeting + ", " + name + " !";
 }
 greetUser("Helloooww", "James");
+
+//template literals
+welcomeEl.textContent = `${greeting} , ${name} !`;
+
+// add the ability to choose the emoji
+function greetUser(greeting, name, emoji) {
+  welcomeEl.textContent = `${greeting} , ${name} ${emoji}!`;
+}
+greetUser("Hello", "Maria", "😃");
