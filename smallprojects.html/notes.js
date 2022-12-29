@@ -153,5 +153,3 @@ function greetUser(greeting, name) {
   welcomeEl.textContent = greeting + ", " + name + " !";
 }
 greetUser("Helloooww", "James");
-
-//orrrrr
