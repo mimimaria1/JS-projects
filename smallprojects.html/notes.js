@@ -182,3 +182,14 @@ function getFirst(arr) {
 }
 let firstCard = getFirst([10,2,9])
 console.log(firstCard)
+
+//learned: 
+//const variable, 
+//addEventListener(), 
+//innerHTML, 
+//input.value, 
+//function parameters, 
+//template strings, 
+//localStorage,
+//JSON object
+//objects in arrays
