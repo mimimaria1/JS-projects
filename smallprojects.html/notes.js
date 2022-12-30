@@ -280,3 +280,4 @@ renderImages()
 //ES6 and beyond
 //APIs & async JavaScript
 //server-side JavaScript
+//credit to Per Harald Borg
