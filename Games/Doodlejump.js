@@ -138,6 +138,12 @@ document.addEventListener("DOMContentLoaded", () => {
       } else moveLeft();
     }, 30);
   }
+  function moveStraigt() {
+    isGoingLeft = false;
+    isGoingRight = false;
+    clearInterval(rightTimerId);
+    clearInterval(leftTimerId);
+  }
 
   function start() {
     if (!isGameOver) {
