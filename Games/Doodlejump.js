@@ -93,25 +93,28 @@ document.addEventListener("DOMContentLoaded", () => {
           isJumping = true;
         }
       });
-    }, 30);
+    }, 20);
   }
 
   function jump() {
     clearInterval(downTimerId);
     isJumping = true;
     upTimerId = setInterval(function () {
+      console.log(startPoint);
+      console.log("1", doodlerBottomSpace);
       doodlerBottomSpace += 20;
       doodler.style.bottom = doodlerBottomSpace + "px";
       if (doodlerBottomSpace > startPoint + 200) {
         fall();
+        isJumping = false;
       }
     }, 30);
   }
 
   function gameOver() {
-    console.log("game over!");
     isGameOver = true;
     while (grid.firstChild) {
+      console.log("remove");
       grid.removeChild(grid.firstChild);
     }
     grid.innerHTML = score;
@@ -122,6 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function control(e) {
+    doodler.style.bottom = doodlerBottomSpace + "px";
     if (e.key === "ArrowLeft") {
       moveLeft();
     } else if (e.key === "ArrowRight") {
@@ -139,6 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
     isGoingLeft = true;
     leftTimerId = setInterval(function () {
       if (doodlerLeftSpace >= 0) {
+        console.log("going left");
         doodlerLeftSpace -= 5;
         doodler.style.left = doodlerLeftSpace + "px";
       } else moveRight();
@@ -147,12 +152,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function moveRight() {
     if (isGoingLeft) {
-      clearInterval(rightTimerId);
+      clearInterval(leftTimerId);
       isGoingLeft = false;
     }
     isGoingRight = true;
     rightTimerId = setInterval(function () {
-      if (doodlerLeftSpace <= 340) {
+      //changed to 313 to fit doodle image
+      if (doodlerLeftSpace <= 313) {
+        console.log("going right");
         doodlerLeftSpace += 5;
         doodler.style.left = doodlerLeftSpace + "px";
       } else moveLeft();
@@ -170,7 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
       createPlatforms();
       createDoodler();
       setInterval(movePlatforms, 30);
-      jump();
+      jump(startPoint);
       document.addEventListener("keyup", control);
     }
   }
