@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let startPoint = 150;
   let doodlerBottomSpace = startPoint;
   let isGameOver = false;
+  let speed = 3;
   let platformCount = 5;
   let platforms = [];
   let upTimerId;
@@ -16,18 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
   let rightTimerId;
   let score = 0;
 
-  function createDoodler() {
-    grid.appendChild(doodler);
-    doodler.classList.add("doodler");
-    doodlerLeftSpace = platforms[0].left;
-    doodler.style.left = doodlerLeftSpace + "px";
-    doodler.style.bottom = doodlerBottomSpace + "px";
-  }
-
   class Platform {
     constructor(newPlatBottom) {
-      this.bottom = newPlatBottom;
       this.left = Math.random() * 315;
+      this.bottom = newPlatBottom;
       this.visual = document.createElement("div");
 
       const visual = this.visual;
@@ -54,12 +47,13 @@ document.addEventListener("DOMContentLoaded", () => {
         platform.bottom -= 4;
         let visual = platform.visual;
         visual.style.bottom = platform.bottom + "px";
+
         if (platform.bottom < 10) {
           let firstPlatform = platforms[0].visual;
           firstPlatform.classList.remove("platform");
           platforms.shift();
-          score++;
           console.log(platforms);
+          score++;
           let newPlatform = new Platform(600);
           platform.push(newPlatform);
         }
@@ -67,21 +61,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  function jump() {
-    clearInterval(downTimerId);
-    isJumping = true;
-    upTimerId = setInterval(function () {
-      doodlerBottomSpace += 20;
-      doodler.style.bottom = doodlerBottomSpace + "px";
-      if (doodlerBottomSpace > startPoint + 200) {
-        fall();
-      }
-    }, 30);
+  function createDoodler() {
+    grid.appendChild(doodler);
+    doodler.classList.add("doodler");
+    doodlerLeftSpace = platforms[0].left;
+    doodler.style.left = doodlerLeftSpace + "px";
+    doodler.style.bottom = doodlerBottomSpace + "px";
   }
 
   function fall() {
-    clearInterval(upTimerId);
     isJumping = false;
+    clearInterval(upTimerId);
     downTimerId = setInterval(function () {
       doodlerBottomSpace -= 5;
       doodler.style.bottom = doodlerBottomSpace + "px";
@@ -96,11 +86,25 @@ document.addEventListener("DOMContentLoaded", () => {
           doodlerLeftSpace <= platform.left + 85 &&
           !isJumping
         ) {
-          console.log("landed");
+          console.log("tick");
           startPoint = doodlerBottomSpace;
           jump();
+          console.log("start, startPoint");
+          isJumping = true;
         }
       });
+    }, 30);
+  }
+
+  function jump() {
+    clearInterval(downTimerId);
+    isJumping = true;
+    upTimerId = setInterval(function () {
+      doodlerBottomSpace += 20;
+      doodler.style.bottom = doodlerBottomSpace + "px";
+      if (doodlerBottomSpace > startPoint + 200) {
+        fall();
+      }
     }, 30);
   }
 
