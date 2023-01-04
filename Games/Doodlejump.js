@@ -53,6 +53,14 @@ document.addEventListener("DOMContentLoaded", () => {
         platform.bottom -= 4;
         let visual = platform.visual;
         visual.style.bottom = platform.bottom + "px";
+        if (platform.bottom < 10) {
+          let firstPlatform = platform[0].visual;
+          firstPlatform.classList.remove("platform");
+          platforms.shift();
+          console.log(platforms);
+          let newPlatform = new Platform(600);
+          platform.push(newPlatform);
+        }
       });
     }
   }
@@ -99,6 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
     isGameOver = true;
     clearInterval(upTimerId);
     clearInterval(downTimerId);
+    clearInterval(leftTimerId);
+    clearInterval(rightTimerId);
   }
 
   function control(e) {
