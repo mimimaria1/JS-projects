@@ -188,3 +188,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   start();
 });
+
+//credits to https://github.com/kubowania
+//Copyright (c) 2020 Ania Kubow
