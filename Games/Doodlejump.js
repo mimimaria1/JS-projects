@@ -1,13 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
   const grid = document.querySelector(".grid");
   const doodler = document.createElement("div");
-  let doodlerLeftSpace = 50;
-  let startPoint = 150;
-  let doodlerBottomSpace = startPoint;
   let isGameOver = false;
   let speed = 3;
   let platformCount = 5;
   let platforms = [];
+  let score = 0;
+  let doodlerLeftSpace = 50;
+  let startPoint = 150;
+  let doodlerBottomSpace = startPoint;
+  const gravity = 0.9;
   let upTimerId;
   let downTimerId;
   let isJumping = true;
@@ -15,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let isGoingRight = false;
   let leftTimerId;
   let rightTimerId;
-  let score = 0;
 
   class Platform {
     constructor(newPlatBottom) {
@@ -54,8 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
           platforms.shift();
           console.log(platforms);
           score++;
-          let newPlatform = new Platform(600);
-          platform.push(newPlatform);
+          var newPlatform = new Platform(600);
+          platforms.push(newPlatform);
         }
       });
     }
@@ -89,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
           console.log("tick");
           startPoint = doodlerBottomSpace;
           jump();
-          console.log("start, startPoint");
+          console.log("start", startPoint);
           isJumping = true;
         }
       });
@@ -104,35 +105,13 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("1", doodlerBottomSpace);
       doodlerBottomSpace += 20;
       doodler.style.bottom = doodlerBottomSpace + "px";
+      console.log("2", doodlerBottomSpace);
+      console.log("s", startPoint);
       if (doodlerBottomSpace > startPoint + 200) {
         fall();
         isJumping = false;
       }
     }, 30);
-  }
-
-  function gameOver() {
-    isGameOver = true;
-    while (grid.firstChild) {
-      console.log("remove");
-      grid.removeChild(grid.firstChild);
-    }
-    grid.innerHTML = score;
-    clearInterval(upTimerId);
-    clearInterval(downTimerId);
-    clearInterval(leftTimerId);
-    clearInterval(rightTimerId);
-  }
-
-  function control(e) {
-    doodler.style.bottom = doodlerBottomSpace + "px";
-    if (e.key === "ArrowLeft") {
-      moveLeft();
-    } else if (e.key === "ArrowRight") {
-      moveRight();
-    } else if (e.key === "ArrowUp") {
-      moveStraight();
-    }
   }
 
   function moveLeft() {
@@ -165,11 +144,37 @@ document.addEventListener("DOMContentLoaded", () => {
       } else moveLeft();
     }, 20);
   }
+
   function moveStraight() {
     isGoingLeft = false;
     isGoingRight = false;
-    clearInterval(rightTimerId);
     clearInterval(leftTimerId);
+    clearInterval(rightTimerId);
+  }
+
+  //assign functions to keyCodes
+  function control(e) {
+    doodler.style.bottom = doodlerBottomSpace + "px";
+    if (e.key === "ArrowLeft") {
+      moveLeft();
+    } else if (e.key === "ArrowRight") {
+      moveRight();
+    } else if (e.key === "ArrowUp") {
+      moveStraight();
+    }
+  }
+
+  function gameOver() {
+    isGameOver = true;
+    while (grid.firstChild) {
+      console.log("remove");
+      grid.removeChild(grid.firstChild);
+    }
+    grid.innerHTML = score;
+    clearInterval(upTimerId);
+    clearInterval(downTimerId);
+    clearInterval(leftTimerId);
+    clearInterval(rightTimerId);
   }
 
   function start() {
@@ -181,6 +186,5 @@ document.addEventListener("DOMContentLoaded", () => {
       document.addEventListener("keyup", control);
     }
   }
-  //attach to button
   start();
 });
