@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let birdLeft = 220;
   let birdBottom = 100;
   let gravity = 2;
+
   function startGame() {
     birdBottom -= gravity;
     bird.style.bottom = birdBottom + "px";
@@ -13,9 +14,23 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   let timerId = setInterval(startGame, 20);
 
+  function control(e) {
+    if (e.keycode === 32) {
+      jump();
+    }
+  }
+
   function jump() {
-    if (birdBottom < 480) birdBottom += 50;
+    if (birdBottom < 500) birdBottom += 50;
     bird.style.bottom = birdBottom + "px";
   }
-  document.addEventListener("keyup", jump);
+  document.addEventListener("keyup", control);
+
+  function generateObstacle() {
+    const obstacle = document.createElement("div");
+    obstacle.classList.add("obstacle");
+    gameDisplay.appendChild(obstacle);
+  }
+
+  generateObstacle();
 });
