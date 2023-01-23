@@ -9,10 +9,10 @@
 }
 
 .card {
-  position: relative;
+  position: absolute;
   height: var(--card-height);
   width: var(--card-width);
-  perspective: 100px;
+  perspective: 1000px;
   cursor: pointer;
 }
 
@@ -39,5 +39,9 @@
 }
 
 .card-back {
-  transform: rotate(180deg);
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
 }
