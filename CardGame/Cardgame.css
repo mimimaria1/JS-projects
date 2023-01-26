@@ -49,7 +49,7 @@ main {
 
 .card-pos-d {
   grid-area: d;
-  border: 1px solid darkcyan;
+  border: 1px solid greenyellow;
 }
 
 .card {
