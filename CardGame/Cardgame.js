@@ -21,4 +21,6 @@ function createElement(elemType) {
   return document.createElement(elemType);
 }
 
-function adddClassToElement() {}
+function addClassToElement(elem, className) {
+  elem.classList.add(className);
+}
