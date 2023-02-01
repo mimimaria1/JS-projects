@@ -15,6 +15,13 @@ function createCard(cardItem) {
   //create front and back image elements for a card
   const cardFrontImg = createElement("img");
   const cardBlackImg = createElement("img");
+
+  //add class and if to card element
+  addClassToElement(cardElem, "card");
+  addIdToElement(cardElem, cardItem.id);
+
+  //add class to inner card element
+  addClassToElement(cardInnerElem, "card-inner");
 }
 
 function createElement(elemType) {
@@ -23,4 +30,8 @@ function createElement(elemType) {
 
 function addClassToElement(elem, className) {
   elem.classList.add(className);
+}
+
+function addIdToElement(elem, id) {
+  elem.id = id;
 }
