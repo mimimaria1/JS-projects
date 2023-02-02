@@ -28,6 +28,9 @@ function createCard(cardItem) {
 
   //add class to back card element
   addClassToElement(cardBackElem, "card-back");
+
+  //add src attribute and appropriate value to img element - back of card
+  addSrcToImageElem(cardBlackElem);
 }
 
 function createElement(elemType) {
@@ -40,4 +43,8 @@ function addClassToElement(elem, className) {
 
 function addIdToElement(elem, id) {
   elem.id = id;
+}
+
+function addSrcToImageElem(imgElem, src) {
+  imgElem.src = src;
 }
