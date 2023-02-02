@@ -22,6 +22,12 @@ function createCard(cardItem) {
 
   //add class to inner card element
   addClassToElement(cardInnerElem, "card-inner");
+
+  //add class to front card element
+  addClassToElement(cardFrontElem, "card-front");
+
+  //add class to back card element
+  addClassToElement(cardBackElem, "card-back");
 }
 
 function createElement(elemType) {
