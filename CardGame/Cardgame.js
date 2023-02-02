@@ -5,7 +5,7 @@ const cardObjectDefinitions = [
   { id: 4, imagePath: "/images/card-AceSpades.png" },
 ];
 
-const cardBlackImgPath = "/images/card-back";
+const cardBlackImgPath = "/images/card-back-blue.png";
 
 function createCard(cardItem) {
   //create div elements that make up a card
