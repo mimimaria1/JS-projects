@@ -32,7 +32,7 @@ function createCard(cardItem) {
   addClassToElement(cardBackElem, "card-back");
 
   //add src attribute and appropriate value to img element - back of card
-  addSrcToImageElem(cardBlackElem);
+  addSrcToImageElem(cardBackElem, cardBackImgPath);
 }
 
 function createElement(elemType) {
