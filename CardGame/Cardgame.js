@@ -59,3 +59,7 @@ function addIdToElement(elem, id) {
 function addSrcToImageElem(imgElem, src) {
   imgElem.src = src;
 }
+
+function addChildElement(parentElem, childElem) {
+  parentElem.appendChild(childElem);
+}
