@@ -41,6 +41,7 @@ function createCard(cardItem) {
   addClassToElement(cardBackElem, "card-img");
   //assign class to back image element of front of card
   addClassToElement(cardFrontElem, "card-img");
+  //add back image element as child element to back card element
 }
 
 function createElement(elemType) {
