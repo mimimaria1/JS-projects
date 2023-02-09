@@ -45,6 +45,10 @@ function createCard(cardItem) {
   addChildElement(cardFrontElem, cardFrontImg);
   //add back image element as child element to back card element
   addChildElement(cardBackElem, cardBackImg);
+  //add front card element as child element to inner card eleement
+  addChildElement(cardInnerElem, cardFrontElem);
+  //add back card element as child element to inner card eleement
+  addChildElement(cardInnerElem, cardBackElem);
 }
 
 function createElement(elemType) {
