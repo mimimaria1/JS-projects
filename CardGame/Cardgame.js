@@ -53,6 +53,7 @@ function createCard(cardItem) {
   addChildElement(cardInnerElem, cardBackElem);
   //add inner card element as a child element to card element
   addChildElement(cardElem, cardInnerElem);
+  //add card element as child element to appropiatee grid cell
 }
 
 function createElement(elemType) {
