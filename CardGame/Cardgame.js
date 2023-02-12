@@ -54,6 +54,7 @@ function createCard(cardItem) {
   //add inner card element as a child element to card element
   addChildElement(cardElem, cardInnerElem);
   //add card element as child element to appropiatee grid cell
+  addCardToGridCell(cardElem);
 }
 
 function createElement(elemType) {
@@ -76,7 +77,7 @@ function addChildElement(parentElem, childElem) {
   parentElem.appendChild(childElem);
 }
 
-function addCardIdToGridCell() {
+function addCardToGridCell() {
   const cardPositionClassName = mapCardIdToGridCell(card);
   const cardPosElem = document.querySelector(cardPositionClassName);
   addChildElement(cardPosElem, card);
