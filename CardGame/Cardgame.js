@@ -7,6 +7,12 @@ const cardObjectDefinitions = [
 
 const cardBlackImgPath = "/images/card-back-blue.png";
 
+function createCards() {
+  cardObjectDefinitions.forEach((cardItem) => {
+    createCard(cardItem);
+  });
+}
+
 const cardContainerElem = document.querySelector(".card-container");
 
 function createCard(cardItem) {
