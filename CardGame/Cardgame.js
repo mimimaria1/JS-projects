@@ -7,6 +7,8 @@ const cardObjectDefinitions = [
 
 const cardBlackImgPath = "/images/card-back-blue.png";
 
+createCards();
+
 function createCards() {
   cardObjectDefinitions.forEach((cardItem) => {
     createCard(cardItem);
