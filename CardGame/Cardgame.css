@@ -51,6 +51,15 @@ main {
   border: 1px solid greenyellow;
 }
 
+.card-pos-a,
+.card-pos-b,
+.card-pos-c,
+.card-pos-d {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card {
   position: absolute;
   height: var(--card-height);
