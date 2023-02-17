@@ -7,7 +7,11 @@ const cardObjectDefinitions = [
 
 const cardBlackImgPath = "/images/card-back-blue.png";
 
-createCards();
+loadGame();
+
+function loadGame() {
+  createCards();
+}
 
 function createCards() {
   cardObjectDefinitions.forEach((cardItem) => {
