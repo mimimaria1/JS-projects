@@ -7,11 +7,15 @@ const cardObjectDefinitions = [
 
 const cardBlackImgPath = "/images/card-back-blue.png";
 
+let cards = [];
 loadGame();
 
 function loadGame() {
   createCards();
+  cards = document.querySelectorAll();
 }
+
+function startGame() {}
 
 function createCards() {
   cardObjectDefinitions.forEach((cardItem) => {
