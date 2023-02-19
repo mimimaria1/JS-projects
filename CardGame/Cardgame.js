@@ -8,6 +8,9 @@ const cardObjectDefinitions = [
 const cardBlackImgPath = "/images/card-back-blue.png";
 
 let cards = [];
+
+const playGameButtonElem = document.getElementById();
+
 loadGame();
 
 function loadGame() {
