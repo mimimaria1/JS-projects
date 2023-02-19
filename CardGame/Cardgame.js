@@ -12,7 +12,7 @@ loadGame();
 
 function loadGame() {
   createCards();
-  cards = document.querySelectorAll();
+  cards = document.querySelectorAll(".card");
 }
 
 function startGame() {}
