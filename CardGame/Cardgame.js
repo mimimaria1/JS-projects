@@ -16,9 +16,12 @@ loadGame();
 function loadGame() {
   createCards();
   cards = document.querySelectorAll(".card");
+  playGameButtonElem.addEventListener("click", () => startGame());
 }
 
-function startGame() {}
+function startGame() {
+  alert("");
+}
 
 function createCards() {
   cardObjectDefinitions.forEach((cardItem) => {
