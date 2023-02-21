@@ -23,6 +23,7 @@ function startGame() {
   initializeNewGame();
 }
 function initializeNewGame() {}
+function startRound()
 
 function createCards() {
   cardObjectDefinitions.forEach((cardItem) => {
