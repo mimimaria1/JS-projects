@@ -21,6 +21,7 @@ function loadGame() {
 
 function startGame() {
   initializeNewGame();
+  startRound();
 }
 function initializeNewGame() {}
 function startRound() {}
