@@ -24,10 +24,12 @@ function startGame() {
   startRound();
 }
 function initializeNewGame() {}
-function startRound() {}
-function initializeNewRound() {
+function startRound() {
   initializeNewRound();
 }
+function initializeNewRound() {}
+
+function collectionCards() {}
 
 function createCards() {
   cardObjectDefinitions.forEach((cardItem) => {
