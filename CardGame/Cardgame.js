@@ -11,6 +11,8 @@ let cards = [];
 
 const playGameButtonElem = document.getElementById();
 
+const collapsedGridAreaTemplate = `"a a" "a a"`;
+
 loadGame();
 
 function loadGame() {
