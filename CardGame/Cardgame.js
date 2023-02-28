@@ -32,8 +32,11 @@ function startRound() {
 }
 function initializeNewRound() {}
 
-function collectionCards() {}
+function collectionCards() {
+  transformGridArea(collapsedGridAreaTemplate);
+}
 
+function transformGridArea(areas) {}
 function createCards() {
   cardObjectDefinitions.forEach((cardItem) => {
     createCard(cardItem);
