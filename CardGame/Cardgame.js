@@ -36,7 +36,9 @@ function collectionCards() {
   transformGridArea(collapsedGridAreaTemplate);
 }
 
-function transformGridArea(areas) {}
+function transformGridArea(areas) {
+  cardContainerElem.style.gridTemplateAreas = areas;
+}
 function createCards() {
   cardObjectDefinitions.forEach((cardItem) => {
     createCard(cardItem);
