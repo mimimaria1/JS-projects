@@ -39,6 +39,11 @@ function collectionCards() {
 function transformGridArea(areas) {
   cardContainerElem.style.gridTemplateAreas = areas;
 }
+
+function addCardsToGridAreaCell(cellPositionClassName) {
+  const cellPositionElem = document.querySelector(cellPositionClassName);
+}
+
 function createCards() {
   cardObjectDefinitions.forEach((cardItem) => {
     createCard(cardItem);
