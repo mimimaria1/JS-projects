@@ -34,6 +34,7 @@ function initializeNewRound() {}
 
 function collectionCards() {
   transformGridArea(collapsedGridAreaTemplate);
+  addCardsToGridAreaCell(cardCollectionCellClass);
 }
 
 function transformGridArea(areas) {
@@ -42,6 +43,10 @@ function transformGridArea(areas) {
 
 function addCardsToGridAreaCell(cellPositionClassName) {
   const cellPositionElem = document.querySelector(cellPositionClassName);
+
+  cards.forEach((card, index) => {
+    addChildElement(cellPositionElem, card);
+  });
 }
 
 function createCards() {
