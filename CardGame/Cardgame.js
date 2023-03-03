@@ -29,6 +29,7 @@ function startGame() {
 function initializeNewGame() {}
 function startRound() {
   initializeNewRound();
+  collectionCards();
 }
 function initializeNewRound() {}
 
