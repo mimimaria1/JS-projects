@@ -50,6 +50,8 @@ function addCardsToGridAreaCell(cellPositionClassName) {
   });
 }
 
+function flipCards(flipToBack) {}
+
 function createCards() {
   cardObjectDefinitions.forEach((cardItem) => {
     createCard(cardItem);
