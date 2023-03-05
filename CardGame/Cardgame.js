@@ -49,7 +49,7 @@ function addCardsToGridAreaCell(cellPositionClassName) {
     addChildElement(cellPositionElem, card);
   });
 }
-
+function flipCard(card, flipToBack) {}
 function flipCards(flipToBack) {}
 
 function createCards() {
