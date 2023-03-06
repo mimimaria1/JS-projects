@@ -49,7 +49,14 @@ function addCardsToGridAreaCell(cellPositionClassName) {
     addChildElement(cellPositionElem, card);
   });
 }
-function flipCard(card, flipToBack) {}
+function flipCard(card, flipToBack) {
+  const innerCardElem = card.firstChild;
+  if (flipToBack && !innerCardElem.classList.contains("flip-it")) {
+    innerCardElem.classList.add("flip-it");
+  } else if (innerCardElem.classList.contains("flip-it")) {
+    innerCardElem.classList.remove("flip-it");
+  }
+}
 function flipCards(flipToBack) {}
 
 function createCards() {
