@@ -57,7 +57,13 @@ function flipCard(card, flipToBack) {
     innerCardElem.classList.remove("flip-it");
   }
 }
-function flipCards(flipToBack) {}
+function flipCards(flipToBack) {
+  cards.forEach((card, index) => {
+    setTimeout(() => {
+      flipCard(card, flipToBack);
+    }, index * 100);
+  });
+}
 
 function createCards() {
   cardObjectDefinitions.forEach((cardItem) => {
