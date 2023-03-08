@@ -25,6 +25,7 @@ function loadGame() {
 function startGame() {
   initializeNewGame();
   startRound();
+  flipCards(true);
 }
 function initializeNewGame() {}
 function startRound() {
