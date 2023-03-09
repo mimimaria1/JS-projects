@@ -66,6 +66,10 @@ function flipCards(flipToBack) {
   });
 }
 
+function shuffleCards() {
+  const id = setInterval();
+}
+
 function createCards() {
   cardObjectDefinitions.forEach((cardItem) => {
     createCard(cardItem);
