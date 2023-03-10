@@ -67,7 +67,7 @@ function flipCards(flipToBack) {
 }
 
 function shuffleCards() {
-  const id = setInterval();
+  const id = setInterval(shuffle, 12);
 }
 
 function createCards() {
