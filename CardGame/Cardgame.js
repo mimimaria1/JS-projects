@@ -68,6 +68,14 @@ function flipCards(flipToBack) {
 
 function shuffleCards() {
   const id = setInterval(shuffle, 12);
+  let shuffleCount = 0;
+  function shuffle() {
+    if (shuffleCount == 500) {
+      clearInterval(id);
+    } else {
+      shuffleCount++;
+    }
+  }
 }
 
 function createCards() {
