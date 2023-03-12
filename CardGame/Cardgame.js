@@ -70,6 +70,7 @@ function shuffleCards() {
   const id = setInterval(shuffle, 12);
   let shuffleCount = 0;
   function shuffle() {
+    randomCardPosition();
     if (shuffleCount == 500) {
       clearInterval(id);
     } else {
