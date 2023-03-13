@@ -78,6 +78,7 @@ function shuffleCards() {
     }
   }
 }
+function randomCardPosition() {}
 
 function createCards() {
   cardObjectDefinitions.forEach((cardItem) => {
