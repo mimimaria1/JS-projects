@@ -78,7 +78,9 @@ function shuffleCards() {
     }
   }
 }
-function randomCardPosition() {}
+function randomCardPosition() {
+  const random1 = Math.floor(Math.random() * num);
+}
 
 function createCards() {
   cardObjectDefinitions.forEach((cardItem) => {
