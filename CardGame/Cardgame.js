@@ -14,6 +14,8 @@ const playGameButtonElem = document.getElementById();
 const collapsedGridAreaTemplate = `"a a" "a a"`;
 const cardCollectionCellClass = ".card-pos-a";
 
+const numCards = cardObjectDefinitions.length;
+
 loadGame();
 
 function loadGame() {
