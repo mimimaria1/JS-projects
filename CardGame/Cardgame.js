@@ -81,7 +81,8 @@ function shuffleCards() {
   }
 }
 function randomCardPosition() {
-  const random1 = Math.floor(Math.random() * num);
+  const random1 = Math.floor(Math.random() * numCards);
+  const random2 = Math.floor(Math.random() * numCards);
 }
 
 function createCards() {
