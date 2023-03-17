@@ -16,7 +16,7 @@ const cardCollectionCellClass = ".card-pos-a";
 
 const numCards = cardObjectDefinitions.length;
 
-let cardPosition = [];
+let cardPositions = [];
 
 loadGame();
 
