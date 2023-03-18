@@ -146,6 +146,8 @@ function createCard(cardItem) {
   addCardToGridCell(cardElem);
 }
 
+function initializeCardPositions() {}
+
 function createElement(elemType) {
   return document.createElement(elemType);
 }
