@@ -77,6 +77,7 @@ function shuffleCards() {
     randomCardPosition();
     if (shuffleCount == 500) {
       clearInterval(id);
+      dealCards();
     } else {
       shuffleCount++;
     }
