@@ -93,6 +93,12 @@ function randomCardPosition() {
 
 function dealCards() {}
 
+function addCardsToAppriateCell() {
+  cards.forEach((card) => {
+    addCardToGridCell(card);
+  });
+}
+
 function createCards() {
   cardObjectDefinitions.forEach((cardItem) => {
     createCard(cardItem);
