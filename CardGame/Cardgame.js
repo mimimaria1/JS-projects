@@ -91,6 +91,8 @@ function randomCardPosition() {
   cardPositions[random2 - 1] = temp;
 }
 
+function dealCards() {}
+
 function createCards() {
   cardObjectDefinitions.forEach((cardItem) => {
     createCard(cardItem);
