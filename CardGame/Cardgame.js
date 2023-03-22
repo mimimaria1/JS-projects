@@ -91,7 +91,9 @@ function randomCardPosition() {
   cardPositions[random2 - 1] = temp;
 }
 
-function dealCards() {}
+function dealCards() {
+  addCardToGridCell(card);
+}
 
 function addCardsToAppriateCell() {
   cards.forEach((card) => {
