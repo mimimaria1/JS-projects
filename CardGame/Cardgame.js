@@ -112,7 +112,10 @@ function returnGridAreasMappedToCardPos() {
     }
     if (index == 1) {
       firstPart = areas.substring(0, areas.length - 1);
+    } else if (index == 3) {
+      secondPart = areas.substring(0, areas.length - 1);
     }
+    return `"${firstPart}" "${secondPart}"`;
   });
 }
 
