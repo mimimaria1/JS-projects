@@ -94,6 +94,7 @@ function randomCardPosition() {
 function dealCards() {
   addCardToGridCell(card);
   const areasTemplate = returnGridAreasMappedToCardPos();
+  transformGridArea(areasTemplate);
 }
 
 function returnGridAreasMappedToCardPos() {
