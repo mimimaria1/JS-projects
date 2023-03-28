@@ -32,9 +32,12 @@ function startGame() {
   flipCards(true);
 }
 function initializeNewGame() {}
+
 function startRound() {
   initializeNewRound();
   collectionCards();
+  flipCards(true);
+  shuffleCards();
 }
 function initializeNewRound() {}
 
