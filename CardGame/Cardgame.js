@@ -20,6 +20,12 @@ let cardPositions = [];
 
 loadGame();
 
+function chooseCard() {
+  function canChooseCard() {
+    return;
+  }
+}
+
 function loadGame() {
   createCards();
   cards = document.querySelectorAll(".card");
