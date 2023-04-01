@@ -22,7 +22,7 @@ loadGame();
 
 function chooseCard() {
   function canChooseCard() {
-    return;
+    return gameInProgress == true;
   }
 }
 
