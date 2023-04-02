@@ -22,7 +22,7 @@ loadGame();
 
 function chooseCard() {
   function canChooseCard() {
-    return gameInProgress == true;
+    return gameInProgress == true && !shuffllingInProgress && !cardRevealed;
   }
 }
 
