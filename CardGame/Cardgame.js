@@ -18,12 +18,21 @@ const numCards = cardObjectDefinitions.length;
 
 let cardPositions = [];
 
+let gameInProgress = false;
+let shuffllingInProgress = false;
+let cardsRevealed = false;
+
 loadGame();
 
 function chooseCard() {
   function canChooseCard() {
-    return gameInProgress == true && !shuffllingInProgress && !cardRevealed;
+    if (canChooseCard()) {
+    }
   }
+}
+
+function canChooseCard() {
+  return gameInProgress == true && !shuffllingInProgress && !cardRevealed;
 }
 
 function loadGame() {
