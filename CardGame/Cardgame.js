@@ -5,6 +5,8 @@ const cardObjectDefinitions = [
   { id: 4, imagePath: "/images/card-AceSpades.png" },
 ];
 
+const aceId = 4;
+
 const cardBlackImgPath = "/images/card-back-blue.png";
 
 let cards = [];
