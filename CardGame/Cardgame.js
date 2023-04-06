@@ -33,7 +33,13 @@ function chooseCard() {
   }
 }
 
-function evaluateCardChoice(card) {}
+function evaluateCardChoice(card) {
+  if (card.id == aceId) {
+    outputChoiceFeedBack(true);
+  } else {
+    outputChoiceFeedBack(false);
+  }
+}
 
 function canChooseCard() {
   return gameInProgress == true && !shuffllingInProgress && !cardRevealed;
