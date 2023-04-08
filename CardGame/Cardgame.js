@@ -33,6 +33,12 @@ function chooseCard() {
   }
 }
 
+function outputChoiceFeedBack(hit) {
+  if (hit) {
+  } else {
+  }
+}
+
 function evaluateCardChoice(card) {
   if (card.id == aceId) {
     updateScore();
