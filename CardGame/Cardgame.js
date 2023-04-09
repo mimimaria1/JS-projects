@@ -35,7 +35,19 @@ function chooseCard() {
 
 function outputChoiceFeedBack(hit) {
   if (hit) {
+    updateStatusElement(
+      currentGameStatusElem,
+      "block",
+      winColor,
+      "Hit!! - Well Done!! :)"
+    );
   } else {
+    updateStatusElement(
+      currentGameStatusElem,
+      "block",
+      loseColor,
+      "Missed!! :("
+    );
   }
 }
 
