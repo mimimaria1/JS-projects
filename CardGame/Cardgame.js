@@ -24,7 +24,7 @@ let gameInProgress = false;
 let shuffllingInProgress = false;
 let cardsRevealed = false;
 
-const currentGameStatusElem = document.querySelector("");
+const currentGameStatusElem = document.querySelector(".current-status");
 
 loadGame();
 
