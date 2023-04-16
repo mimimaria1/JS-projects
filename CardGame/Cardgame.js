@@ -37,7 +37,7 @@ function chooseCard() {
   }
 }
 
-function updateStatusElement() {}
+function updateStatusElement(elem, display, color, innerHTML) {}
 
 function outputChoiceFeedBack(hit) {
   if (hit) {
