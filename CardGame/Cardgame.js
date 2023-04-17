@@ -37,7 +37,13 @@ function chooseCard() {
   }
 }
 
-function updateStatusElement(elem, display, color, innerHTML) {}
+function updateStatusElement(elem, display, color, innerHTML) {
+  elem.style.display = display;
+  if (arguments.length > 2) {
+    elem.style.color = color;
+    elem.innerHTML = innerHTML;
+  }
+}
 
 function outputChoiceFeedBack(hit) {
   if (hit) {
