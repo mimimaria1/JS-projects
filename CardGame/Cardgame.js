@@ -33,6 +33,7 @@ loadGame();
 function chooseCard() {
   function canChooseCard() {
     if (canChooseCard()) {
+      evaluateCardChoice;
     }
   }
 }
