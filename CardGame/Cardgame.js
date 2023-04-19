@@ -30,7 +30,7 @@ const loseColor = "red";
 
 loadGame();
 
-function chooseCard() {
+function chooseCard(card) {
   function canChooseCard() {
     if (canChooseCard()) {
       evaluateCardChoice;
