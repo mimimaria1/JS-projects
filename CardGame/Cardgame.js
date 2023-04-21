@@ -38,6 +38,14 @@ function chooseCard(card) {
   }
 }
 
+function calculateScore() {
+  const scoreToAdd = calculateScoreToAdd(roundNum);
+}
+
+function updateScore() {
+  calculateScore();
+}
+
 function updateStatusElement(elem, display, color, innerHTML) {
   elem.style.display = display;
   if (arguments.length > 2) {
