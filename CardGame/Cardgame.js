@@ -38,8 +38,11 @@ function chooseCard(card) {
   }
 }
 
+function calculateScoreToAdd(roundNum) {}
+
 function calculateScore() {
   const scoreToAdd = calculateScoreToAdd(roundNum);
+  score = score + scoreToAdd;
 }
 
 function updateScore() {
