@@ -38,7 +38,12 @@ function chooseCard(card) {
   }
 }
 
-function calculateScoreToAdd(roundNum) {}
+function calculateScoreToAdd(roundNum) {
+  if (roundNum == 1) {
+    return 100;
+  } else if (roundNum == 2) {
+  }
+}
 
 function calculateScore() {
   const scoreToAdd = calculateScoreToAdd(roundNum);
