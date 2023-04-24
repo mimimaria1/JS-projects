@@ -42,6 +42,11 @@ function calculateScoreToAdd(roundNum) {
   if (roundNum == 1) {
     return 100;
   } else if (roundNum == 2) {
+    return 50;
+  } else if (roundNum == 3) {
+    return 25;
+  } else {
+    return 10;
   }
 }
 
