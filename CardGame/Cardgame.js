@@ -28,6 +28,9 @@ const currentGameStatusElem = document.querySelector(".current-status");
 const winColor = "green";
 const loseColor = "red";
 
+let roundNum = 0;
+let maxRounds = 4;
+
 loadGame();
 
 function chooseCard(card) {
