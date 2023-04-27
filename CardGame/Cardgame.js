@@ -113,7 +113,10 @@ function startGame() {
   startRound();
   flipCards(true);
 }
-function initializeNewGame() {}
+function initializeNewGame() {
+  score = 0;
+  roundNum = 0;
+}
 
 function startRound() {
   initializeNewRound();
