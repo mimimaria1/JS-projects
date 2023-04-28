@@ -116,6 +116,8 @@ function startGame() {
 function initializeNewGame() {
   score = 0;
   roundNum = 0;
+
+  shuffllingInProgress = false;
 }
 
 function startRound() {
