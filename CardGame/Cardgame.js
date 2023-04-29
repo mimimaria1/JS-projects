@@ -126,7 +126,10 @@ function startRound() {
   flipCards(true);
   shuffleCards();
 }
-function initializeNewRound() {}
+function initializeNewRound() {
+  roundNum++;
+  playGameButtonElem.disabled = true;
+}
 
 function collectionCards() {
   transformGridArea(collapsedGridAreaTemplate);
