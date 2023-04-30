@@ -129,6 +129,9 @@ function startRound() {
 function initializeNewRound() {
   roundNum++;
   playGameButtonElem.disabled = true;
+
+  gameInProgress = true;
+  shuffllingInProgress = true;
 }
 
 function collectionCards() {
