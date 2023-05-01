@@ -132,6 +132,7 @@ function initializeNewRound() {
 
   gameInProgress = true;
   shuffllingInProgress = true;
+  cardsRevealed = false;
 }
 
 function collectionCards() {
