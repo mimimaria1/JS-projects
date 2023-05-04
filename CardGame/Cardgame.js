@@ -27,10 +27,12 @@ let cardsRevealed = false;
 const currentGameStatusElem = document.querySelector(".current-status");
 const winColor = "green";
 const loseColor = "red";
+const primaryColor = "black"
 
 let roundNum = 0;
 let maxRounds = 4;
 let score = 0;
+
 
 loadGame();
 
