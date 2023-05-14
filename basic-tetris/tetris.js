@@ -174,3 +174,5 @@ document.addEventListener("DOMContentLoaded", () => {
     [1, displayWidth + 1, displayWidth * 2 + 1, displayWidth * 3 + 1], //iTetromino
   ];
 });
+
+//display the shape in the mini-grid display
