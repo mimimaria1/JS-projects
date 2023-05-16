@@ -190,9 +190,7 @@ function displayShape() {
   });
   upNextTetrominoes[nextRandom].forEach((index) => {
     displaySquares[displayIndex + index].classList.add("tetromino");
-    displaySquares[displayIndex + index].style.backgroundColor = colors[nextRandom]
-    })
-});
+  });
 
   //add functionality to the button
   startBtn.addEventListener("click", () => {
