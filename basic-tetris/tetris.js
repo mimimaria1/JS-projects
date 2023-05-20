@@ -206,6 +206,8 @@ function displayShape() {
     }
   });
 
+function what()
+
   //add score
   function addScore() {
     for (let i = 0; i < 199; i += width) {
