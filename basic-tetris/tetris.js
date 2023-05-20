@@ -205,7 +205,6 @@ function displayShape() {
       displayShape();
     }
   });
-  function addSquare() {}
 
   //add score
   function addScore() {
