@@ -235,3 +235,22 @@ function displayShape() {
     }
   }
 }
+
+//worked with these functions;
+//.addEventListener()
+//.querySelector()
+//.querySelectorAll()
+//.keyCode
+//Math.floor()
+//Math.random()
+//.length
+//.forEach()
+//.splice()
+// clearInterval()
+// setIntervall()
+// .some()
+//.innerHTML()
+//.every()
+//.add()
+//.remove()
+//.contains()
