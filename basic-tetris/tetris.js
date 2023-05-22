@@ -118,6 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
       draw();
       displayShape();
       addScore();
+      gameOver();
     }
   }
   //move the tetromino left, unless is at the edge or there is a blockage
@@ -234,6 +235,17 @@ function displayShape() {
       }
     }
   }
+  //game over
+  function gameOver() {
+    if (
+      current.some((index) =>
+        squares[currentPosition + index].classList.contains("taken")
+      )
+    ) {
+      scoreDisplay.innerHTML = "end";
+      clearInterval(timerId);
+    }
+  }
 }
 
 //worked with these functions;
@@ -254,3 +266,5 @@ function displayShape() {
 //.add()
 //.remove()
 //.contains()
+
+//All credits to @kubowania
