@@ -270,5 +270,6 @@ function displayShape() {
 //.every()
 //.add()
 //.remove()
+//.contains()
 
 //All credits to @kubowania
