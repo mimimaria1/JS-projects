@@ -272,4 +272,4 @@ function displayShape() {
 //.remove()
 //.contains()
 
-//All credits to @kubowania
+//All credits to @kubowania on Github
