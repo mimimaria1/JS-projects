@@ -26,6 +26,8 @@ let cardsRevealed = false;
 
 const currentGameStatusElem = document.querySelector(".current-status");
 const scoreContainerElem = document.querySelector(.header-score-container)
+const scoreElem = document.querySelector()
+
 const winColor = "green";
 const loseColor = "red";
 const primaryColor = "black"
