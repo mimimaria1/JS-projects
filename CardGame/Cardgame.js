@@ -28,6 +28,7 @@ const currentGameStatusElem = document.querySelector(".current-status");
 const scoreContainerElem = document.querySelector(.header-score-container)
 const scoreElem = document.querySelector('.score')
 const roundContainerElem = document.querySelector('.header-round-container')
+const roundElem = document.querySelector()
 
 const winColor = "green";
 const loseColor = "red";
