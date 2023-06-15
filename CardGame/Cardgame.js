@@ -125,6 +125,8 @@ function initializeNewGame() {
   roundNum = 0;
 
   shuffllingInProgress = false;
+
+  updateStatusElement(scoreContainerElem, "flex")
 }
 
 function startRound() {
