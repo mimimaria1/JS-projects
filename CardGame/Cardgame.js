@@ -129,6 +129,7 @@ function initializeNewGame() {
   updateStatusElement(scoreContainerElem, "flex")
   updateStatusElement(roundContainerElem, "flex")
   updateStatusElement(scoreElem, 'block', primaryColor, `Score <span class='badge'>$(score)</span>`)
+  updateStatusElement(roundElem, 'block', primaryColor, `Round <span class='badge'>$(round)</span>`)
 }
 
 function startRound() {
