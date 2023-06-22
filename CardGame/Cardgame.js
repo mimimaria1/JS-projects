@@ -147,7 +147,7 @@ function initializeNewRound() {
   cardsRevealed = false;
 
   updateStatusElement(currentGameStatusElem, "block", primaryColor, "Shuffling...";
-  updateStatusElement(currentGameStatusElem, "block", primaryColor, "Shuffling...";
+  updateStatusElement(currentGameStatusElem, "block", primaryColor, Round <span class='badge'>$(round)</span>;
 }
 
 function collectionCards() {
