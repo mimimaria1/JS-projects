@@ -45,6 +45,7 @@ function chooseCard(card) {
   function canChooseCard() {
     if (canChooseCard()) {
       evaluateCardChoice(card);
+      flipCard(card,false)
     }
   }
 }
