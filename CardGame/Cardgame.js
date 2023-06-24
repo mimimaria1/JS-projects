@@ -46,6 +46,10 @@ function chooseCard(card) {
     if (canChooseCard()) {
       evaluateCardChoice(card);
       flipCard(card,false)
+
+      setTimeout(() => {
+        flipCards(false)
+      }, timeout);
     }
   }
 }
