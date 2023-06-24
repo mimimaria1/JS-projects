@@ -49,7 +49,8 @@ function chooseCard(card) {
 
       setTimeout(() => {
         flipCards(false)
-      }, timeout);
+        updateStatusElement(currentGameStatusElem,"block", primaryColor)
+      });
     }
   }
 }
