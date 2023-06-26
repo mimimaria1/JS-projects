@@ -49,7 +49,7 @@ function chooseCard(card) {
 
       setTimeout(() => {
         flipCards(false)
-        updateStatusElement(currentGameStatusElem,"block", primaryColor)
+        updateStatusElement(currentGameStatusElem,"block", primaryColor, "Card positions revealed")
       });
     }
   }
