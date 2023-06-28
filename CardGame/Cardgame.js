@@ -51,6 +51,7 @@ function chooseCard(card) {
         flipCards(false)
         updateStatusElement(currentGameStatusElem,"block", primaryColor, "Card positions revealed")
       },3000);
+      cardsRevealed = true
     }
   }
 }
