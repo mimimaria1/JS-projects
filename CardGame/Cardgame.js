@@ -302,6 +302,9 @@ function createCard(cardItem) {
 
   initializeCardPositions(cardElem);
 }
+function attachClickEventHandlerToCard(card){
+  
+}
 
 function initializeCardPositions(card) {
   cardPositions.push(card.id);
