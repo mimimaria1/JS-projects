@@ -303,7 +303,7 @@ function createCard(cardItem) {
   initializeCardPositions(cardElem);
 }
 function attachClickEventHandlerToCard(card){
-  
+  card.addEventListener('click')
 }
 
 function initializeCardPositions(card) {
