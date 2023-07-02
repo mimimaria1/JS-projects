@@ -301,7 +301,9 @@ function createCard(cardItem) {
   addCardToGridCell(cardElem);
 
   initializeCardPositions(cardElem);
+  attachClickEventHandlerToCard()
 }
+
 function attachClickEventHandlerToCard(card){
   card.addEventListener('click', () => chooseCard(card))
 }
