@@ -349,3 +349,8 @@ function mapCardIdToGridCell(card) {
     return ".card-pos-d";
   }
 }
+
+
+
+
+//credits by
