@@ -353,4 +353,3 @@ function mapCardIdToGridCell(card) {
 
 
 
-//credits by GavinLonDigital
