@@ -136,7 +136,7 @@ function initializeNewGame() {
   updateStatusElement(scoreContainerElem, "flex")
   updateStatusElement(roundContainerElem, "flex")
   updateStatusElement(scoreElem, 'block', primaryColor, `Score <span class='badge'>$(score)</span>`)
-  updateStatusElement(roundElem, 'block', primaryColor, `Round <span class='badge'>$(round)</span>`)
+  updateStatusElement(roundElem, 'block', primaryColor, `Round <span class='badge'>$(roundNum)</span>`)
 }
 
 function startRound() {
@@ -153,8 +153,8 @@ function initializeNewRound() {
   shuffllingInProgress = true;
   cardsRevealed = false;
 
-  updateStatusElement(currentGameStatusElem, "block", primaryColor, "Shuffling...";
-  updateStatusElement(currentGameStatusElem, "block", primaryColor, Round <span class='badge'>$(round)</span>;
+  updateStatusElement(currentGameStatusElem, "block", primaryColor, "Shuffling...");
+  updateStatusElement(currentGameStatusElem, "block", primaryColor, `Round <span class='badge'>${roundNum}</span>`);
 }
 
 function collectionCards() {
