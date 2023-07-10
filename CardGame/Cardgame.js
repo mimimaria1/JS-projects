@@ -196,6 +196,7 @@ function shuffleCards() {
     randomCardPosition();
     if (shuffleCount == 500) {
       clearInterval(id);
+      shuffllingInProgress = false
       dealCards();
     } else {
       shuffleCount++;
