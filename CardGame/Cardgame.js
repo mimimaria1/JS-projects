@@ -309,7 +309,9 @@ function attachClickEventHandlerToCard(card){
   card.addEventListener('click', () => chooseCard(card))
 }
 
-function attachClickEventHandlerToCard(card){}
+function attachClickEventHandlerToCard(card){
+  card.addEventListener('click')
+}
 
 function initializeCardPositions(card) {
   cardPositions.push(card.id);
