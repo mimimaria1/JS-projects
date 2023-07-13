@@ -358,3 +358,4 @@ function mapCardIdToGridCell(card) {
 
 
 
+//Credits
